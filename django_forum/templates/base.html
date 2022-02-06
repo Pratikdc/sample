@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio hai</title>
+    <title>Django Forum</title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 </head>
 <body>
-    <H1>hahahhaahahhaa</H1>
+    {% block content %} {{ content }} {% endblock %}
 </body>
 </html>
